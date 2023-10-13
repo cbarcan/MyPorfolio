@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  /* border: 1px solid red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  background-color: rgb(4, 65, 4);
+}
+
+.name {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.name a {
+  height: fit-content;
+  width: fit-content;
+}
+
+.name a p {
+  color: whitesmoke;
+}
+
+.name a i {
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.navbar {
+  height: 100%;
+  width: 50%;
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar span {
+  color: whitesmoke;
+}
