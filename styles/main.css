@@ -31,24 +31,20 @@
 
 html {
   scroll-behavior: smooth;
+  background: url(../assets/images/main.jpeg) no-repeat;
+  background-size: cover;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: darkslategray;
-}
-
-h1 {
-  font-size: 50px;
-  color: antiquewhite;
 }
 
 header {
   height: 6vh;
   width: 100%;
-  display: none;
+  display: flex;
   justify-content: center;
   background-color: rgb(4, 65, 4);
 }
@@ -97,27 +93,4 @@ header {
 
 .navbar span {
   color: whitesmoke;
-}
-
-main {
-  height: 100vh;
-  width: 70%;
-}
-
-.home {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.home p {
-  font-size: 24px;
-}
-
-.home span {
-  font-weight: 700;
-  color: antiquewhite;
-  border-bottom: 3px green solid;
 }
