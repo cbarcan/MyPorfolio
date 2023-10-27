@@ -25,7 +25,6 @@
   text-decoration: none;
   color: black;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  /* border: 1px solid red; */
 }
 
 html {
@@ -34,40 +33,119 @@ html {
   background-size: cover;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 h1 {
   font-size: 50px;
-  color: antiquewhite;
+  color: whitesmoke;
 }
 
 main {
   height: 100vh;
   width: 100%;
+  padding: 0 7% 0 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 5%;
 }
 
 main p {
   font-size: 24px;
+  color: whitesmoke;
 }
 
 main p span {
   font-weight: 700;
-  color: antiquewhite;
-  border-bottom: 3px green solid;
+  color: whitesmoke;
+  border-bottom: 3px rgb(80, 235, 49) solid;
   border-right: 0.15em solid orange;
   animation: blink 0.75s step-end infinite;
   width: max-content;
 }
 
-nav {
+nav ul {
+  display: flex;
+  gap: 2vw;
+}
 
+nav span {
+  font-size: 18px;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+
+nav > ul > li:nth-of-type(1) span {
+  font-weight: 700;
+  opacity: 1;
+}
+
+nav > ul > li:nth-of-type(1) span:first-of-type {
+  color: rgb(80, 235, 49);
+}
+
+nav > ul > li:nth-of-type(2):hover span {
+  font-weight: 700;
+  opacity: 1;
+}
+
+nav > ul > li:nth-of-type(2):hover span:first-of-type {
+  color: rgb(80, 235, 49);
+}
+
+nav > ul > li:nth-of-type(3):hover span {
+  font-weight: 700;
+  opacity: 1;
+}
+
+nav > ul > li:nth-of-type(3):hover span:first-of-type {
+  color: rgb(80, 235, 49);
+}
+
+nav > ul > li:nth-of-type(4):hover span {
+  font-weight: 700;
+  opacity: 1;
+}
+
+nav > ul > li:nth-of-type(4):hover span:first-of-type {
+  color: rgb(80, 235, 49);
+}
+
+nav > ul > li:nth-of-type(5):hover span {
+  font-weight: 700;
+  opacity: 1;
+}
+
+nav > ul > li:nth-of-type(5):hover span:first-of-type {
+  font-weight: 700;
+  opacity: 1;
+  color: rgb(80, 235, 49);
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(92, 92, 92, 0.171);
+  transition: background-color 2s ease-out;
+}
+
+.social a:hover {
+  background-color: rgb(80, 235, 49);
+}
+
+.social i {
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.social a:first-of-type {
+  margin-right: 30px;
 }
 
 @keyframes blink {
@@ -76,6 +154,6 @@ nav {
     border-right-color: transparent;
   }
   50% {
-    border-right-color:antiquewhite;
+    border-right-color:whitesmoke;
   }
 }
