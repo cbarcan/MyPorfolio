@@ -246,9 +246,9 @@ main {
 }
 
 .infoBox {
-  height: 150px;
-  width: 48.5%;
-  padding: 20px;
+  height: 120px;
+  width: 49%;
+  padding: 30px;
   background: rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
@@ -285,7 +285,21 @@ main {
 }
 
 .contactBox {
-  height: 330px;
+  height: 440px;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+}
+
+.contactInput{
+  width: 100%;
+}
+
+#contactMessage {
+  width: 100%;
+  padding: 15px 18px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 0;
+  color: #fff;
 }
