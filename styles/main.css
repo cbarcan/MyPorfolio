@@ -291,15 +291,80 @@ main {
   padding: 30px;
 }
 
-.contactInput{
+.contactInput {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#contactMessage {
-  width: 100%;
+.contact:focus {
+  outline: 1px solid rgb(80, 235, 49);
+}
+
+#contactName {
+  width: 49%;
   padding: 15px 18px;
   font-size: 15px;
   background: rgba(255, 255, 255, 0.10);
   border: 0;
   color: #fff;
+}
+
+#contactEmail {
+  width: 49%;
+  padding: 15px 18px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 0;
+  color: #fff;
+}
+
+#contactSubject {
+  width: 100%;
+  padding: 15px 18px;
+  margin-top: 20px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 0;
+  color: #fff;
+}
+
+#contactMessage {
+  width: 100%;
+  padding: 15px 18px;
+  margin-top: 20px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 0;
+  color: #fff;
+}
+
+.contactSend {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#contactSendButton {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 5%;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.10);
+  color: rgb(80, 235, 49);
+}
+
+#contactSendButton i {
+  color: rgb(80, 235, 49);
+}
+
+#contactSendButton:hover {
+  cursor: pointer;
+  background-color: rgb(80, 235, 49);
+  color: #fff;
+}
+
+#contactSendButton:active {
+  transform: translateY(2px);
 }

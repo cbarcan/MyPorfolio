@@ -57,3 +57,5 @@ function deleteOut(txtArr, curChar = 0) {
 }
 
 writeOut(txtArr);
+
+

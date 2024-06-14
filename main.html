@@ -161,18 +161,21 @@
             <p>+41 779 62 70 73</p>
           </div>
         </div>
-        <div class="contactBox">
+        <form class="contactBox" method="POST" action="./scripts/form.php">
           <div class="contactInput">
-            <input type="text" id="contactName">
-            <input type="text" id="contactEmail">
+            <input type="text" class="contact" id="contactName" placeholder="Name" required>
+            <input type="email" class="contact" id="contactEmail" placeholder="E-mail" required>
           </div>
           <div class="contactInput">
-            <input type="text" id="contactSubject">
+            <input type="text" class="contact" id="contactSubject" placeholder="Subject" required>
           </div>
           <div class="contactInput">
-            <textarea name="contactMessage" id="contactMessage" rows="8" placeholder="Message"></textarea>
+            <textarea name="contactMessage" class="contact" id="contactMessage" maxlength="300" rows="8" placeholder="Message" required></textarea>
           </div>
-        </div>
+          <div class="contactSend">
+            <button type="submit" id="contactSendButton"><i class="fa-solid fa-paper-plane"></i> Contact me!</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
