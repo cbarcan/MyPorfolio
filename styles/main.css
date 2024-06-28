@@ -53,6 +53,45 @@ h3 {
   color: rgba(92, 92, 92, 0.863);
 }
 
+/* up-botton */
+#upButton {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.10);
+  cursor: pointer;
+  z-index: 7001;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.5s;
+}
+
+#upButton i {
+  color: rgb(80, 235, 49);
+}
+
+#upButton.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#upButton:hover {
+  background-color: rgb(80, 235, 49);
+}
+
+#upButton:hover i {
+  color: rgb(104, 104, 104);
+}
+
+
 header {
   height: 6vh;
   width: 100%;
@@ -66,7 +105,7 @@ header {
   z-index: 5000;
 }
 
-.header_wrapper{
+.headerWrapper{
   height: 100%;
   width: 100%;
   padding: 0 7% 0 7%;

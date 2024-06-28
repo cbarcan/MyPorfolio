@@ -1,4 +1,5 @@
-const txtFull = "Full Stack Developer"; //the text goes here
+//front page text writing animation
+const txtFull = "Full Stack Developer";
 const txtArr = txtFull.split("");
 
 function waitForMs(ms) {
@@ -59,3 +60,41 @@ function deleteOut(txtArr, curChar = 0) {
 writeOut(txtArr);
 
 
+// function sendEmail() {
+//   Email.send({
+//       Host: "smtp.gmail.com",
+//       Username: "sender@email_address.com",
+//       Password: "Enter your password",
+//       To: 'receiver@email_address.com',
+//       From: "sender@email_address.com",
+//       Subject: "Sending Email using javascript",
+//       Body: "Well that was easy!!",
+//   })
+//       .then(function (message) {
+//           alert("mail sent successfully")
+//       });
+// }
+
+//scroll to top
+var upButton = document.querySelector("#upButton");
+
+window.onscroll = () => {
+  if (window.scrollY > 300) {
+    upButton.classList.add('show')
+  } else {
+    upButton.classList.remove('show');
+  }
+};
+
+upButton.onclick = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+mobileNavToggle.addEventListener("click", () => {
+  if (navbar.style.display === "none") {
+    navbar.style.display = "block";
+  } else {
+    navbar.style.display = "none"
+  }
+})
